@@ -24,8 +24,8 @@ namespace Minesweeper
             board.Render();
 
             // Loop
-            // Read line and col
-            // see 
+            // Read rows and cols
+            // see box
 
             board.Render();
         }
