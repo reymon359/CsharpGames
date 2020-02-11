@@ -16,9 +16,13 @@ namespace Hangman
             Console.ReadLine();
         }
 
+        private string secret_word = "house";
+
         private void run()
         {
-            throw new NotImplementedException();
+            Word secret = new Word(secret_word);
+
+            Console.WriteLine(secret);
         }
     }
 }
