@@ -20,5 +20,14 @@ namespace Minesweeper
         {
             mine = true;
         }
+
+        public override string ToString()
+        {
+            if (!sweeped) return "X";
+            else if (mine) return "💣";
+            else if (value == 0) return " ";
+            else return "" + value;
+
+        }
     }
 }
