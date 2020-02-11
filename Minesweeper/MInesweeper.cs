@@ -38,7 +38,6 @@ namespace Minesweeper
                 board.SweepBox(row, col);
 
                 board.Render();
-                Console.ReadLine();
             }
           
         }

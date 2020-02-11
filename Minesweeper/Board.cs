@@ -33,7 +33,7 @@ namespace Minesweeper
             // /*Fill the board with bombs*/
             for (int i = 1; i < this.rows + 1; i++)
                 for (int j = 1; j < this.cols + 1; j++)
-                    if (rnd.Next(10) < 3)
+                    if (rnd.Next(10) < 2)
                     {
                         this.boxes[i, j].addMine();
                         // sum 1
@@ -60,7 +60,7 @@ namespace Minesweeper
         private void SumOnes(int i, int j)
         {
             for (int f = i - 1; f <= i + 1; f++)
-                for (int c = i - 1; c <= i + 1; c++)
+                for (int c = j - 1; c <= j + 1; c++)
                     this.boxes[f, c].SumOne();
         }
 
