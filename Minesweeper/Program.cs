@@ -28,6 +28,7 @@ namespace Minesweeper
             // see box
 
             board.Render();
+            Console.ReadLine();
         }
     }
 }

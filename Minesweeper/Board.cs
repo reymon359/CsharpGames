@@ -18,24 +18,33 @@ namespace Minesweeper
 
             // Create board
             for(int i = 0; i < this.rows + 2; i++)
-                for(int j = 0; j < this.cols + 2; i++)
+                for(int j = 0; j < this.cols + 2; j++)
                     boxes[i, j] = new Box();
 
             Random rnd = new Random();
             // /*Fill the board with bombs*/
             for (int i = 1; i < this.rows + 1; i++)
-                for (int j = 1; j < this.cols + 1; i++)
+                for (int j = 1; j < this.cols + 1; j++)
                     if (rnd.Next(10) < 4)
                     {
                         this.boxes[i, j].addMine();
                         // sum 1
                     }
             }
-        }
+        
 
-        internal void Render()
-        {
-            throw new NotImplementedException();
+        internal void Render() {
+            for (int i = 1; i < this.rows + 1; i++)
+            {
+                for (int j = 1; j < this.cols + 1; j++)
+                {
+                    Console.Write(" | " + this.boxes[i, j]);
+
+                }
+                Console.WriteLine(" | ");
+
+            }
         }
+               
     }
 }

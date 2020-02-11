@@ -24,7 +24,7 @@ namespace Minesweeper
         public override string ToString()
         {
             if (!sweeped) return "X";
-            else if (mine) return "💣";
+            else if (mine) return M";
             else if (value == 0) return " ";
             else return "" + value;
 
