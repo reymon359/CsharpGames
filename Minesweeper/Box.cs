@@ -24,10 +24,15 @@ namespace Minesweeper
         public override string ToString()
         {
             if (!sweeped) return "X";
-            else if (mine) return M";
+            else if (mine) return "M";
             else if (value == 0) return " ";
             else return "" + value;
 
+        }
+
+        internal void SumOne()
+        {
+            throw new NotImplementedException();
         }
     }
 }

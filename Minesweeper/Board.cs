@@ -29,9 +29,16 @@ namespace Minesweeper
                     {
                         this.boxes[i, j].addMine();
                         // sum 1
+                        this.SumOnes(i, j);
                     }
             }
-        
+
+        private void SumOnes(int i, int j)
+        {
+            for (int f = i - 1; f <= i + 1; f++)
+                for (int c = i - 1; c <= i + 1; c++)
+                    this.boxes[f, c].SumOne();
+        }
 
         internal void Render() {
             for (int i = 1; i < this.rows + 1; i++)
@@ -44,7 +51,10 @@ namespace Minesweeper
                 Console.WriteLine(" | ");
 
             }
+
         }
+
+        
                
     }
 }
