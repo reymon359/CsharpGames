@@ -35,7 +35,7 @@ namespace Minesweeper
 
         internal void SweepBox(int row, int col)
         {
-            throw new NotImplementedException();
+            this.boxes[row, col].Sweep();
         }
 
         private void SumOnes(int i, int j)

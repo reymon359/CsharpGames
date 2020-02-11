@@ -34,5 +34,10 @@ namespace Minesweeper
         {
             this.value++;
         }
+
+        internal void Sweep()
+        {
+            this.sweeped = true;
+        }
     }
 }
