@@ -1,4 +1,6 @@
-﻿namespace Hangman
+﻿using System;
+
+namespace Hangman
 {
     internal class Word
     {
@@ -23,5 +25,10 @@
             return msg;
         }
 
+        internal void CheckIfContains(Letter read_letter)
+        {
+            foreach (Letter word_letter in letters)
+                word_letter.HasSameValue(read_letter);
+        }
     }
 }

@@ -1,4 +1,6 @@
-﻿namespace Hangman
+﻿using System;
+
+namespace Hangman
 {
     public class Letter
     {
@@ -16,6 +18,12 @@
             if (this.guessed)
                 return "" + this.value;
             else return "-";
+        }
+
+        internal void HasSameValue(Letter read_letter)
+        {
+            if (this.value == read_letter.value)
+                this.guessed = true;
         }
     }
 }
