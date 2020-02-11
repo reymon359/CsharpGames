@@ -12,5 +12,7 @@
                 letters[i] = new Letter(secret_word[i]);
             }
         }
+
+    
     }
 }
