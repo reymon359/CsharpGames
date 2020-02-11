@@ -33,7 +33,7 @@ namespace Minesweeper
             // /*Fill the board with bombs*/
             for (int i = 1; i < this.rows + 1; i++)
                 for (int j = 1; j < this.cols + 1; j++)
-                    if (rnd.Next(10) < 4)
+                    if (rnd.Next(10) < 3)
                     {
                         this.boxes[i, j].addMine();
                         // sum 1

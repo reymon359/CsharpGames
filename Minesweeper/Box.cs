@@ -42,12 +42,12 @@ namespace Minesweeper
 
         internal bool IsEmpty()
         {
-            throw new NotImplementedException();
+            return (!mine && value == 0);
         }
 
         internal bool IsSweeped()
         {
-            throw new NotImplementedException();
+            return sweeped;
         }
     }
 }
