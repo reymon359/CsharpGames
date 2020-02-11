@@ -6,10 +6,28 @@ using System.Threading.Tasks;
 
 namespace Minesweeper
 {
-    class Program
+    class Minesweeper
     {
         static void Main(string[] args)
         {
+            Minesweeper game = new Minesweeper();
+            game.run();
+
+            Console.ReadLine();
+        }
+
+
+        private void run()
+        {
+            Board board = new Board(6, 6);
+
+            board.Render();
+
+            // Loop
+            // Read line and col
+            // see 
+
+            board.Render();
         }
     }
 }
