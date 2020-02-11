@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Hangman
+namespace Hangman.Model
 {
     public class Letter
     {
