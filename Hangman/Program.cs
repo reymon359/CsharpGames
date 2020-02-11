@@ -26,14 +26,17 @@ namespace Hangman
 
             // Loop
 
-            // putLetter
-            Console.WriteLine("Write a letter: ");
-            char letter = Console.ReadLine()[0];
-            Letter read_letter = new Letter(letter);
+            for(; ; )
+            {
+                // putLetter
+                Console.WriteLine("Write a letter: ");
+                char letter = Console.ReadLine()[0];
+                Letter read_letter = new Letter(letter);
 
-            secret.CheckIfContains(read_letter);
+                secret.CheckIfContains(read_letter);
                 // Visualice
                 Console.WriteLine(secret);
+            }
         }
     }
 }
