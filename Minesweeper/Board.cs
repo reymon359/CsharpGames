@@ -18,14 +18,19 @@ namespace Minesweeper
 
             // Create board
             for(int i = 0; i < this.rows + 2; i++)
-            {
                 for(int j = 0; j < this.cols + 2; i++)
-                {
                     boxes[i, j] = new Box();
-                }
-            }
 
-            // Fill the board with bombs
+            Random rnd = new Random();
+            // /*Fill the board with bombs*/
+            for (int i = 1; i < this.rows + 1; i++)
+                for (int j = 1; j < this.cols + 1; i++)
+                    if (rnd.Next(10) < 4)
+                    {
+                        this.boxes[i, j].addMine();
+                        // sum 1
+                    }
+            }
         }
 
         internal void Render()
