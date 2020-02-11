@@ -43,7 +43,18 @@ namespace Minesweeper
 
         internal void SweepBox(int row, int col)
         {
+
             this.boxes[row, col].Sweep();
+
+            if (this.boxes[row, col].IsEmpty())
+            {
+                for (int f = row - 1; f <= row + 1; f++)
+                    for (int c = col - 1; c <= col + 1; c++)
+                        // this.boxes[f, c].Sweep();
+                        if (!this.boxes[f, c].IsSweeped())
+                            this.SweepBox(f, c);
+            }
+            
         }
 
         private void SumOnes(int i, int j)

@@ -11,6 +11,7 @@ namespace Minesweeper
         static void Main(string[] args)
         {
             Minesweeper game = new Minesweeper();
+
             game.run();
 
             Console.ReadLine();
@@ -20,9 +21,10 @@ namespace Minesweeper
         private void run()
         {
             Board board = new Board(6, 6);
+            Console.WriteLine("Minesweeper. Rows and cols from 1 to 6 ");
 
             board.Render();
-
+            
             // Loop
             // Read rows and cols
             Console.WriteLine("Write a row: ");

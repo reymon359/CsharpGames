@@ -45,7 +45,7 @@
   <ItemGroup>
     <Compile Include="Board.cs" />
     <Compile Include="Box.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Minesweeper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

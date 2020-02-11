@@ -39,5 +39,15 @@ namespace Minesweeper
         {
             this.sweeped = true;
         }
+
+        internal bool IsEmpty()
+        {
+            throw new NotImplementedException();
+        }
+
+        internal bool IsSweeped()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
