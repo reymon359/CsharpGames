@@ -25,7 +25,13 @@ namespace Minesweeper
 
             // Loop
             // Read rows and cols
-            // see box
+            Console.WriteLine("Write a row: ");
+            int row = Int16.Parse(Console.ReadLine());
+            Console.WriteLine("Write a col: ");
+            int col = Int16.Parse(Console.ReadLine());
+
+            // sweep box
+            board.SweepBox(row, col);
 
             board.Render();
             Console.ReadLine();

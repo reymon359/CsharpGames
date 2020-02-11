@@ -13,7 +13,7 @@ namespace Minesweeper
         {
             mine = false;
             value = 0;
-            sweeped = true;
+            sweeped = false;
         }
 
         internal void addMine()

@@ -33,6 +33,11 @@ namespace Minesweeper
                     }
             }
 
+        internal void SweepBox(int row, int col)
+        {
+            throw new NotImplementedException();
+        }
+
         private void SumOnes(int i, int j)
         {
             for (int f = i - 1; f <= i + 1; f++)
