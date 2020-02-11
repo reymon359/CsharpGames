@@ -21,6 +21,14 @@ namespace Minesweeper
                 for(int j = 0; j < this.cols + 2; j++)
                     boxes[i, j] = new Box();
 
+            // value > 0 in border
+            for (int i = 0; i < this.rows + 2; i++)
+            {
+                boxes[0, i].SumOne();
+                boxes[cols + 1, i].SumOne();
+                boxes[i, 0].SumOne();
+                boxes[i, rows + 1].SumOne();
+            }
             Random rnd = new Random();
             // /*Fill the board with bombs*/
             for (int i = 1; i < this.rows + 1; i++)
