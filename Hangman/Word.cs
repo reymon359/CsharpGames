@@ -2,7 +2,7 @@
 {
     internal class Word
     {
-        private Letter letters[];
+        private Letter[] letters;
 
         public Word(string secret_word)
         {
@@ -13,6 +13,15 @@
             }
         }
 
-    
+        public override string ToString()
+        {
+            string msg = "";
+
+            foreach (Letter letter in letters)
+                msg += letter + " ";
+
+            return msg;
+        }
+
     }
 }
