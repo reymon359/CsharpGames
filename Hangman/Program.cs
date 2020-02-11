@@ -23,6 +23,10 @@ namespace Hangman
             Word secret = new Word(secret_word);
 
             Console.WriteLine(secret);
+
+            // Loop
+            // putLetter
+            // Visualice
         }
     }
 }
