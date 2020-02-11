@@ -32,7 +32,7 @@ namespace Minesweeper
 
         internal void SumOne()
         {
-            throw new NotImplementedException();
+            this.value++;
         }
     }
 }
