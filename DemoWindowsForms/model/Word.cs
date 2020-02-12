@@ -30,5 +30,10 @@ namespace Hangman.Model
             foreach (Letter word_letter in letters)
                 word_letter.HasSameValue(read_letter);
         }
+
+        internal string getLetterFromPosition(int i)
+        {
+            return letters[i].ToString();
+        }
     }
 }
