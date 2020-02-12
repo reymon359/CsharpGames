@@ -41,6 +41,7 @@
             this.btn_addLetter.TabIndex = 0;
             this.btn_addLetter.Text = "Add Letter";
             this.btn_addLetter.UseVisualStyleBackColor = true;
+            this.btn_addLetter.Click += new System.EventHandler(this.lbl_word_Click);
             // 
             // lbl_word
             // 
@@ -51,6 +52,7 @@
             this.lbl_word.Size = new System.Drawing.Size(46, 17);
             this.lbl_word.TabIndex = 1;
             this.lbl_word.Text = "label1";
+            this.lbl_word.Click += new System.EventHandler(this.lbl_word_Click);
             // 
             // txt_letter
             // 
@@ -69,6 +71,7 @@
             this.Controls.Add(this.btn_addLetter);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.initialization);
             this.ResumeLayout(false);
             this.PerformLayout();
 
