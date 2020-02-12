@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hangman", "Hangman\Hangman.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Minesweeper", "Minesweeper\Minesweeper.csproj", "{45434E4E-2B2A-454A-8856-C75D7B4760F7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HangmanWindowsForms", "DemoWindowsForms\HangmanWindowsForms.csproj", "{34724CCE-3C3D-47E8-9096-CEC606AD9EAE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{45434E4E-2B2A-454A-8856-C75D7B4760F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45434E4E-2B2A-454A-8856-C75D7B4760F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45434E4E-2B2A-454A-8856-C75D7B4760F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34724CCE-3C3D-47E8-9096-CEC606AD9EAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34724CCE-3C3D-47E8-9096-CEC606AD9EAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34724CCE-3C3D-47E8-9096-CEC606AD9EAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34724CCE-3C3D-47E8-9096-CEC606AD9EAE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
